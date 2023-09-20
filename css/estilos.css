@@ -1,0 +1,39 @@
+/* RESET(para no dejar que el padding si,e al width) */
+*{
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    --margenGrid-S: 20px;
+    --margenGrid-D: 40PX;
+}
+
+/* CONTENEDOR -Grid */
+.contenedor-grid{
+    padding: 0 var(--margenGrid-S);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: [header]60px [main]1fr [footer]1fr;
+    /* grid-template-rows: [header]60px [main]auto [footer]auto; */
+    column-gap: var(--margenGrid-S);
+    @media only screen and (min-width: 1000px){
+        padding: 0 var(--margenGrid-D);
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        column-gap: var(--margenGrid-D);
+    }
+
+}
+
+/* HEADER */
+/* ancho total */
+header{
+    height: 60px;
+}
+
+/* MAIN */
+
+
+/* FOOTER */
+/* ancho total */
