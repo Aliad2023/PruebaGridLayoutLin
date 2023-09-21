@@ -10,16 +10,16 @@
 }
 
 /* CONTENEDOR -Grid */
-.contenedor-grid{
-    padding: 0 var(--margenGrid-S);
+.contenedor-grid, main{
+    /* padding: 0 var(--margenGrid-S); */
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: [header]60px [main]1fr [footer]1fr;
     /* grid-template-rows: [header]60px [main]auto [footer]auto; */
     column-gap: var(--margenGrid-S);
     @media only screen and (min-width: 1000px){
-        padding: 0 var(--margenGrid-D);
-        display: grid;
+        /* padding: 0 var(--margenGrid-D); */
+        /* display: grid; */
         grid-template-columns: repeat(12,1fr);
         column-gap: var(--margenGrid-D);
     }
@@ -28,12 +28,63 @@
 
 /* HEADER */
 /* ancho total */
+header, main, footer, .main__titular, .main__slogan {
+    grid-column: 1/-1;
+}
+
 header{
-    height: 60px;
+    /* height: 60px; */
+    /* grid-column: 1/-1; */
+    background-color: greenyellow;
+
+    /* & nav {max-width: 1024px;
+    display: flex; 
+    justify-content: space-between;
+    } */
 }
 
 /* MAIN */
+main{
+    /* Eliminar el GRE(grid template row)que teniamos para el div */
+    grid-auto-flow: none;
+
+    /* grid-column: 1/-1; */
+    background-color: turquoise;
+    margin: 0 var(--margenGrid-S);
+    /* max-width: 1024px; */
+    /* align-items: center; */
+    & .main__titular{
+        grid-column: 1/-1;
+        grid-row: 80px;
+        justify-self: center;
+        /* align-self: center; */
+    }
+
+    & .main__slogan{
+        grid-column: 1/-1;
+        max-width: 1024px;
+        justify-self: center;    
+    }
+
+& img{
+    /* se acopla en la web */
+    width: 100%;
+}
+
+& .main__imagen01{
+    grid-column: 1/4;
+}
+
+& .main__imagen02{
+    grid-column: 4/7;
+}
+}
+
 
 
 /* FOOTER */
 /* ancho total */
+footer{
+/* grid-column: 1/-1; */
+background-color: grey;
+}
