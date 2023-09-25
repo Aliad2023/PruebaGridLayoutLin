@@ -2,175 +2,185 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- Etiquetas Meta -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Tu nombre" />
+  <head>
+    <!-- Etiquetas Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tu nombre" />
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="robots" content="index, follow" />
-        <meta name="format-detection" content="telephone=no, email=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index, follow" />
+    <meta name="format-detection" content="telephone=no, email=no" />
 
-        <!-- Etiqueta para favicon -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Etiqueta para favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        <!-- SEO para el buscador de Google -->
-        <title>Título de tu página</title>
-        <meta name="description" content="Descripción de tu página" />
+    <!-- SEO para el buscador de Google -->
+    <title>Título de tu página</title>
+    <meta name="description" content="Descripción de tu página" />
 
-        <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
-        <meta property="og:title" content="Título de tu página" />
-        <meta property="og:description" content="Descripción de tu página" />
-        <meta
-            property="og:image"
-            content="URL de la imagen que quieres mostrar en las redes sociales"
-        />
-        <meta property="og:url" content="URL de tu página" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Título de tu página" />
-        <meta name="twitter:description" content="Descripción de tu página" />
-        <meta
-            name="twitter:image"
-            content="URL de la imagen que quieres mostrar en Twitter"
-        />
+    <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+    <meta property="og:title" content="Título de tu página" />
+    <meta property="og:description" content="Descripción de tu página" />
+    <meta
+      property="og:image"
+      content="URL de la imagen que quieres mostrar en las redes sociales"
+    />
+    <meta property="og:url" content="URL de tu página" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Título de tu página" />
+    <meta name="twitter:description" content="Descripción de tu página" />
+    <meta
+      name="twitter:image"
+      content="URL de la imagen que quieres mostrar en Twitter"
+    />
 
-        <!-- Código de las plataformas de Análisis -->
-        <script></script>
+    <!-- Código de las plataformas de Análisis -->
+    <script></script>
 
-        <!-- Estilos CSS -->
-        <link rel="stylesheet" href="css/normalize.min.css" />
-        <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
 
-        <!-- Scripts a cargar antes de la renderización -->
-        <script src="preloader.js"></script>
-    </head>
-    <body>
-        <!-- CONTENEDOR paralelo al Body -->
-        <div class="contenedor-grid">
-            <!-- HEADER, zona superior que se repite en todos los HTML -->
-            <header>
-                <!-- zona de repeticón,se repetite en cada página -->
-            </header>
-            <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
-            <main>
-                <!-- Cambio de la página,los contenidos solo sale una vez -->
-                <h2 class="main__titular">Título</h2>
-                <p class="main__slogan">
-                    Lorem ipsum dolor sit amet consectetur. Enim fusce tincidunt
-                    consectetur nunc amet lobortis. Tempus iaculis ipsum quis ut
-                    amet ornare porta convallis enim. Urna phasellus morbi
-                    consectetur.
-                </p>
-                <!-- Imagenes en paralelo -->
+    <!-- Scripts a cargar antes de la renderización -->
+    <script src="preloader.js"></script>
+  </head>
+  <body>
+    <!-- CONTENEDOR paralelo al Body -->
+    <div class="contenedor-grid">
+      <!-- HEADER, zona superior que se repite en todos los HTML -->
+      <header>
+        <!-- zona de repeticón,se repetite en cada página -->
+      </header>
+      <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
+      <main>
+        <!-- Cambio de la página,los contenidos solo sale una vez -->
 
-                <!-- Imagenes izquierda -->
-                <picture class="main__imagen01">
-                    <!-- smartphone -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida01.webp    1x,
-                            img/smartphone/IMG-comida01@2x.webp 2x,
-                            img/smartphone/IMG-comida01@3x.webp 3x
-                        "
-                        media="(min-width:320px) and (orientation:portrait)"
-                    />
+        <!-- Con banner-Desktop  -->
+        <picture class="banner">
+            <h2 class="main__titular">Título</h2>
+            <p class="main__slogan">
+              Lorem ipsum dolor sit amet consectetur. Enim fusce tincidunt
+              consectetur nunc amet lobortis. Tempus iaculis ipsum quis ut amet
+              ornare porta convallis enim. Urna phasellus morbi consectetur.
+            </p>
+        </picture>
 
-                    <!-- desktop -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida01.webp    1x,
-                            img/smartphone/IMG-comida01@2x.webp 2x
-                        "
-                        media="(min-width:1000px)"
-                    />
-                    <img src="" alt="" />
-                </picture>
-                <!-- Imagenes derecha -->
-                <picture class="main__imagen02">
-                    <!-- smartphone -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida02.webp    1x,
-                            img/smartphone/IMG-comida02@2x.webp 2x,
-                            img/smartphone/IMG-comida02@3x.webp 3x
-                        "
-                        media="(min-width:320px) and (orientation:portrait)"
-                    />
+        <!-- Sin banner-Movil -->
+        <!-- <h2 class="main__titular">Título</h2>
+        <p class="main__slogan">
+          Lorem ipsum dolor sit amet consectetur. Enim fusce tincidunt
+          consectetur nunc amet lobortis. Tempus iaculis ipsum quis ut amet
+          ornare porta convallis enim. Urna phasellus morbi consectetur.
+        </p> -->
 
-                    <!-- desktop -->
-                    <source
-                        srcset="
-                    img/smartphone/IMG-comida02.webp    1x,
-                    img/smartphone/IMG-comida02@2x.webp 2x
-                "
-                        media="(min-width:1000px)"
-                    />
-                    <img src="" alt="" />
-                </picture>
+        <!-- Imagenes en paralelo -->
 
-                <!-- Tercer imagen -->
-                <picture class="main__imagen03">
-                    <!-- smartphone -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida03.webp    1x,
-                            img/smartphone/IMG-comida03@2x.webp 2x,
-                            img/smartphone/IMG-comida03@3x.webp 3x
-                        "
-                        media="(min-width:320px) and (orientation:portrait)"
-                    />
+        <!-- Imagenes izquierda -->
+        <picture class="main__imagen01">
+          <!-- smartphone -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida01.webp    1x,
+              img/smartphone/IMG-comida01@2x.webp 2x,
+              img/smartphone/IMG-comida01@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+          />
 
-                    <!-- desktop -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida03.webp    1x,
-                            img/smartphone/IMG-comida03@2x.webp 2x
-                        "
-                        media="(min-width:1000px)"
-                    />
-                    <img src="" alt="" />
-                </picture>
+          <!-- desktop -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida01.webp    1x,
+              img/smartphone/IMG-comida01@2x.webp 2x
+            "
+            media="(min-width:1000px)"
+          />
+          <img src="" alt="" />
+        </picture>
+        <!-- Imagenes derecha -->
+        <picture class="main__imagen02">
+          <!-- smartphone -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida02.webp    1x,
+              img/smartphone/IMG-comida02@2x.webp 2x,
+              img/smartphone/IMG-comida02@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+          />
 
-                <!-- TItulo de FOOD -->
+          <!-- desktop -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida02.webp    1x,
+              img/smartphone/IMG-comida02@2x.webp 2x
+            "
+            media="(min-width:1000px)"
+          />
+          <img src="" alt="" />
+        </picture>
 
-                <h2 class="main__food">FOOD</h2>
-                <!-- TItulo de FOOD -->
-                <h2 class="main__comida">COMIDA</h2>
+        <!-- Tercer imagen -->
+        <picture class="main__imagen03">
+          <!-- smartphone -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida03.webp    1x,
+              img/smartphone/IMG-comida03@2x.webp 2x,
+              img/smartphone/IMG-comida03@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+          />
 
+          <!-- desktop -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida03.webp    1x,
+              img/smartphone/IMG-comida03@2x.webp 2x
+            "
+            media="(min-width:1000px)"
+          />
+          <img src="" alt="" />
+        </picture>
 
-                <!-- Imagenes derecha - columna4-->
-                <picture class="main__imagen04">
-                    <!-- smartphone -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida04.webp    1x,
-                            img/smartphone/IMG-comida04@2x.webp 2x,
-                            img/smartphone/IMG-comida04@3x.webp 3x
-                        "
-                        media="(min-width:320px) and (orientation:portrait)"
-                    />
+        <!-- TItulo de FOOD -->
 
-                    <!-- desktop -->
-                    <source
-                        srcset="
-                            img/smartphone/IMG-comida04.webp    1x,
-                            img/smartphone/IMG-comida04@2x.webp 2x
-                        "
-                        media="(min-width:1000px)"
-                    />
-                    <img src="" alt="" />
-                </picture>
+        <h2 class="main__food">FOOD</h2>
+        <!-- TItulo de FOOD -->
+        <h2 class="main__comida">COMIDA</h2>
 
-                <!-- Flecha para indicar que hay más contenido haciendo scrosll -->
-                <img class="" src="img/" />
+        <!-- Imagenes derecha - columna4-->
+        <picture class="main__imagen04">
+          <!-- smartphone -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida04.webp    1x,
+              img/smartphone/IMG-comida04@2x.webp 2x,
+              img/smartphone/IMG-comida04@3x.webp 3x
+            "
+            media="(min-width:320px) and (orientation:portrait)"
+          />
 
-            </main>
-            <!-- FOOTER, zona inferior que se repite en todos los HTML -->
-            <footer>
-                <!-- zona de repeticón -->
-            </footer>
-        </div>
-    </body>
+          <!-- desktop -->
+          <source
+            srcset="
+              img/smartphone/IMG-comida04.webp    1x,
+              img/smartphone/IMG-comida04@2x.webp 2x
+            "
+            media="(min-width:1000px)"
+          />
+          <img src="" alt="" />
+        </picture>
+
+        <!-- Flecha para indicar que hay más contenido haciendo scrosll -->
+        <img class="flechita" src="img/flechita.svg" />
+      </main>
+      <!-- FOOTER, zona inferior que se repite en todos los HTML -->
+      <footer>
+        <!-- zona de repeticón -->
+      </footer>
+    </div>
+  </body>
 </html>
